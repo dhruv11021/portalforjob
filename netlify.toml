@@ -1,0 +1,4 @@
+[build]
+  base = "react-job-portal"
+  command = "npm run build"
+  publish = "react-job-portal/build"
