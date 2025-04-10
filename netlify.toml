@@ -1,4 +1,4 @@
 [build]
-  base = "frontend"
-  publish = "frontend/build"
+  base = "react-job-portal/frontend"
+  publish = "react-job-portal/frontend/build"
   command = "npm install && npm run build"
