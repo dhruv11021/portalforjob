@@ -1,15 +1,41 @@
-Job Portal App with MERN Stack
-A comprehensive job portal application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This application allows users to browse job listings, apply for jobs, and manage their applications seamlessly.
+# 🧑‍💼 PortalForJob
 
-Features
-🧑‍💼 User registration and login
-📄 Job listings and applications
-🔒 Clerk-based authentication (optional)
-⚡ Built with Vite for fast performance
-Project Structure
-frontend – React app (Vite)
-backend – Node.js/Express server
-To Run 
+A modern job portal built using **React**, designed to help users browse and apply for jobs with ease. The portal includes user authentication, dynamic job listings, a user dashboard, and more — all wrapped in a sleek UI.
+
+---
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page]("![homepage png](https://github.com/user-attachments/assets/f07245c1-2a77-4e58-85c2-2f6334da50a0)
+")
+
+### 🔐 Login Page
+![Login Page]("loginpage_png)
+
+### 👤 Dashboard (Coming Soon)
+![Dashboard](./screenshots/dashboard.png)
+
+## ✨ Features
+
+- 🔐 **User Authentication**  
+  Secure login and registration forms with form validation.
+
+- 🗂️ **Job Listings**  
+  Display available job openings with key details like title, location, and company.
+
+- 📄 **Job Details Page**  
+  View expanded job descriptions and requirements.
+
+- 👤 **User Dashboard**  
+  View applied jobs and manage user profile (in progress).
+
+- 📱 **Responsive UI**  
+  Fully responsive design using modern CSS for desktop and mobile views.
+
+---
+
+## 🚀 Getting Started
+
 npm run dev   # starts frontend on Vite
 node  server.js   # starts backend server
 
