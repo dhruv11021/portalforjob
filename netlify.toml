@@ -1,0 +1,4 @@
+[build]
+  base = "react-job-portal/frontend"
+  command = "npm install && npm run build"
+  publish = "dist"
