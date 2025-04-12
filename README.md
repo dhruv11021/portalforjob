@@ -10,10 +10,12 @@ A modern job portal built using **React**, designed to help users browse and app
 ")
 
 ### 🔐 Login Page
-![Login Page]("loginpage_png)
+![Login Page](![loginpage png](https://github.com/user-attachments/assets/ccbd6137-d533-4ebf-a759-90d17d28f41b)
+)
 
-### 👤 Dashboard (Coming Soon)
-![Dashboard](./screenshots/dashboard.png)
+### 👤 post page (Coming Soon)
+![Job post page](![post job png](https://github.com/user-attachments/assets/9e324b86-7649-418c-8c15-e2084774b94b)
+)
 
 ## ✨ Features
 
