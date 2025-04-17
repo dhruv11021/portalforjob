@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `${import.meta.env.VITE_API_BASE_URL}/user/login`,
+        "https://portalforjob.onrender.com/api/v1/user/login",
         { name, phone, email, role, password },
         {
           headers: {
