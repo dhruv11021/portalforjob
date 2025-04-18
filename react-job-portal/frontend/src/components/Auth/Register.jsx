@@ -21,16 +21,20 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(
-        `https://portalforjob.onrender.com/api/v1/user/login`,
-        { name, phone, email, role, password },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-        }
-      );
+      const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+await axios.post(`${API_BASE_URL}/user/register`, {
+  name,
+  phone,
+  email,
+  role,
+  password,
+}, {
+  headers: {
+    "Content-Type": "application/json",
+  },
+  withCredentials: true,
+});
       toast.success(data.message);
       setName("");
       setEmail("");
