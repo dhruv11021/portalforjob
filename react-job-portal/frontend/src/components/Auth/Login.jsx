@@ -7,19 +7,20 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { Context } from "../../main";
 import API from "../../utils/axios";
-
+ 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
-
   const { isAuthorized, setIsAuthorized } = useContext(Context);
+
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://portalforjob.onrender.com/api/v1/user/login",
+        `${BASE_URL}/user/login`,
         { email, password, role },
         {
           headers: {
