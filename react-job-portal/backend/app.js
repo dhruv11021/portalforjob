@@ -11,18 +11,13 @@ import fileUpload from "express-fileupload";
 
 const app = express();
 config({ path: "./config/config.env" });
-const cors = require("cors");
-
-const allowedOrigins = [
-  "https://portalforjob.vercel.app",
-  "http://localhost:5173" // keep this if you're testing locally too
-];
-
-app.use(cors({
-  origin: allowedOrigins,
-  credentials: true
-}));
-
+app.use(
+  cors({
+    origin: [process.env.FRONTEND_URL],
+    method: ["GET", "POST", "DELETE", "PUT"],
+    credentials: true,
+  })
+);
 
 
 app.use(cookieParser());
