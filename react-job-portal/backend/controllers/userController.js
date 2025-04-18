@@ -10,7 +10,7 @@ export const register = catchAsyncErrors(async (req, res, next) => {
   }
   const isEmail = await User.findOne({ email });
   if (isEmail) {
-    return next(new ErrorHandler("Email already registered !"));
+    return next(new ErrorHandler("Email  registered !"));
   }
   const user = await User.create({
     name,
